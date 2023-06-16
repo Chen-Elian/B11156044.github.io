@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>期末個人專題</title>
+    <link rel="stylesheet" type="text/css" href="rwd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <section class="headerNav">
+        <div>
+            <h1 class="logo">鏽湖 Rusty Lake</h1>
+
+            <i class="fas fa-bars" id="mobileMenu"></i>
+
+            <ul class="mainNav">
+                <li class="navItem">
+                    <a href="index.html" target="_self">回首頁</a>
+                </li>
+                <li class="navItem exercise">
+                    <a href="#">
+                        更多資訊
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="exerciseList">
+                        <li class="exerciseForList">
+                            <a href="character.html" target="_self">重要人物介紹</a>
+                        </li>
+                        <li class="exerciseForList">
+                            <a href="series.html" target="_self">系列作品</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <div class="wrap">
+        <ul>
+            <li>
+                <b>
+                
+                    <h2>重要人物介紹</h2>
+
+                    <img src="crow.png" alt="crow" align="left" class="imgCrt">
+                    <h3>Mr.Crow</h3>
+                    <p>經常以烏鴉形象和黑色的外套出現。
+                        <br>在系列中扮演著引導和觀察者的角色，指導玩家完成各種謎題和任務。
+                    </p>
+                    <p>&nbsp;</p>
+
+                    <img src="owl.png" alt="owl" align="left" class="imgCrt">
+                    <h3>Mr.Owl</h3>
+                    <p>經常以貓頭鷹形象出現。
+                        <br>在系列中扮演著解謎和提示的角色，向玩家提供重要的信息和指導。
+                    </p>
+                    <p>&nbsp;</p>
+
+                    <img src="harvey.png" alt="harvey" align="left" class="imgCrt">
+                    <h3>Harvey</h3>
+                    <p>一隻白色鴿子。
+                        <br>在系列中扮演著預言和警示的角色，他的出現經常與重要的情節和謎題相關。
+                    </p>
+                    <p>&nbsp;</p>
+
+                    <img src="dale.png" alt="dale" align="left" class="imgCrt">
+                    <h3>Dale Vandermeer</h3>
+                    <p>系列的主角之一，一名年輕的偵探。
+                        <br>在遊戲中，陷入了一個詭異且充滿謎題的世界，而他必須解開謎題並揭示鏽湖的秘密。
+                    </p>
+                    <p>&nbsp;</p>
+
+                    <img src="luara.jpg" alt="luara" align="left" class="imgCrt">
+                    <h3>Laura Vanderboom</h3>
+                    <p>系列的重要角色，Dale Vandermeer的外曾祖母。
+                        <br>她有一個被詛咒的家族，玩家需要解開一連串的謎題，以揭示她家族的秘密。
+                    </p>
+                    <p>&nbsp;</p>
+
+                </p>
+            </li>
+        </ul>
+    </div>
+
+</body>
+<script>
+    var mobileMenu = document.getElementById("mobileMenu");
+    var mainNav = document.querySelector(".mainNav");
+    var headerNav = document.querySelector(".headerNav");
+
+    mobileMenu.addEventListener("click", function() {
+        mainNav.classList.toggle("mainNavShow");
+        headerNav.classList.toggle("headerNavShow");
+    });
+</script>
+
+</html>

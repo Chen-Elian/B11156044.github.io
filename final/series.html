@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>期末個人專題</title>
+    <link rel="stylesheet" type="text/css" href="rwd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <section class="headerNav">
+        <div>
+            <h1 class="logo">鏽湖 Rusty Lake</h1>
+
+            <i class="fas fa-bars" id="mobileMenu"></i>
+
+            <ul class="mainNav">
+                <li class="navItem">
+                    <a href="index.html" target="_self">回首頁</a>
+                </li>
+                <li class="navItem exercise">
+                    <a href="#">
+                        更多資訊
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="exerciseList">
+                        <li class="exerciseForList">
+                            <a href="character.html" target="_self">重要人物介紹</a>
+                        </li>
+                        <li class="exerciseForList">
+                            <a href="series.html" target="_self">系列作品</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <div class="wrap">
+        <ul>
+            <li>
+                <b>
+
+                    <h2>系列作品</h2>
+
+                    <h3>前傳</h3>
+                    <p>Samsara Room 輪回的房間</p>
+
+                    <h3>逃離方塊系列（Cube Escape）</h3>
+                    <p>Cube Escape: The Lake 逃離方塊：鏽湖</p>
+                    <p>Cube Escape: Seasons 逃離方塊：四季</p>
+                    <p>Cube Escape: Arles 逃離方塊：阿爾勒</p>
+                    <p>Cube Escape: Harvey's Box 逃離方塊：哈維的盒子</p>
+                    <p>Cube Escape: Case 23 逃離方塊：案件23</p>
+                    <p>Cube Escape: The Mill 逃離方塊：磨坊</p>
+                    <p>Cube Escape: Birthday 逃離方塊：生日</p>
+                    <p>Cube Escape: Theatre 逃離方塊：劇院</p>
+                    <p>Cube Escape: The Cave 逃離方塊：洞穴</p>
+                    <p>Cube Escape: Paradox 逃離方塊：悖論</p>
+                    <p>Cube Escape: Collection 逃離方塊典藏版</p>
+
+                    <h3>鏽湖系列（Rusty Lake）</h3>
+                    <p>Rusty Lake: Hotel 銹湖：旅館</p>
+                    <p>Rusty Lake: Roots 銹湖：根源</p>
+                    <p>Rusty Lake: Paradise 銹湖：天堂島</p>
+
+                    <h3>非系列作品</h3>
+                    <p> The White Door 白門</p>
+                    <p>The Past Within 內在昔日</p>
+
+                </b>
+            </li>
+        </ul>
+    </div>
+
+</body>
+<script>
+    var mobileMenu = document.getElementById("mobileMenu");
+    var mainNav = document.querySelector(".mainNav");
+    var headerNav = document.querySelector(".headerNav");
+
+    mobileMenu.addEventListener("click", function() {
+        mainNav.classList.toggle("mainNavShow");
+        headerNav.classList.toggle("headerNavShow");
+    });
+</script>
+
+</html>
