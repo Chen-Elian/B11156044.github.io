@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>期末個人專題</title>
+    <link rel="stylesheet" type="text/css" href="rwd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <section class="headerNav">
+        <div>
+
+            <h1 class="logo">鏽湖 Rusty Lake</h1>
+
+            <i class="fas fa-bars" id="mobileMenu"></i>
+
+            <ul class="mainNav">
+                <li class="navItem">
+                    <a href="#">回首頁</a>
+                </li>
+                <li class="navItem exercise">
+                    <a href="#">
+                        更多資訊
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="exerciseList">
+                        <li class="exerciseForList">
+                            <a href="character.html" target="_self">重要人物介紹</a>
+                        </li>
+                        <li class="exerciseForList">
+                            <a href="series.html" target="_self">系列作品</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <div class="wrap">
+        <ul>
+            <li>
+                <b>
+                    <h2>簡介</h2>
+                    <p>　　是位於荷蘭阿姆斯特丹的同名獨立遊戲工作坊鏽湖工作室製作並發行的密室逃脫類系列遊戲。因其大部分遊戲又都以「逃離方塊」（Cube Escape）作爲遊戲名稱的一部分，該系列作品也被稱爲逃離方塊系列或方塊逃脫系列。</p>
+                    <p>　　其開發者稱，其創作「鏽湖」這一虛構世界的靈感來源於大衛·林區和馬克·弗羅斯特的電視劇《雙峰》。其每款游戲在故事情節和人物網路中相互聯繫穿插，每一部分都揭示了更多關於「鏽湖世界」的內容。</p>
+                    <img src="pic/rusty lake.jpg" alt="rusty lake" class="imgMain">
+                </b>
+            </li>
+        </ul>
+    </div>
+
+</body>
+<script>
+    var mobileMenu = document.getElementById("mobileMenu");
+    var mainNav = document.querySelector(".mainNav");
+    var headerNav = document.querySelector(".headerNav");
+
+    mobileMenu.addEventListener("click", function() {
+        mainNav.classList.toggle("mainNavShow");
+        headerNav.classList.toggle("headerNavShow");
+    });
+</script>
+
+</html>
